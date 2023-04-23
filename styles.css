@@ -1,0 +1,306 @@
+
+/*fuentes*/
+
+@font-face {
+    font-family: fuentepersonalizada;
+    src: url("fonts/PlayfairDisplay-Regular.ttf");
+}
+
+/*fin de las fuentes*/
+
+/*estilos generales*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+       
+}
+
+body{
+background-image: url(images/stars.png);
+background-attachment: fixed;
+}
+/*fin de los estilos generales*/
+
+/*cabecera*/
+
+#header{
+
+min-width: 1024px;
+width: 100%;
+height: 250px;
+margin: 0px auto;
+
+
+}
+
+#header a {
+    text-decoration: none;
+}
+#header #logo{
+    width: 770px;
+    margin: -30px auto; /*centrar logo*/
+    height: 200px;
+}
+
+#logowar{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 240px;
+    border: 0px;   
+}
+
+#header h1 a{
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 100px;
+    color: rgb(194, 235, 194);
+    font-family: fuentepersonalizada ;
+    text-shadow: 3px 1px 3px #aeecc3; 
+}
+/*fin de la cabecera*/
+
+
+/*barra de navegacion*/
+
+#menunav{
+
+ width: 100%;
+ background-color: white;
+ height: 40px;
+ font-family: fuentepersonalizada;
+ color: white;
+ font-size: 14px;
+ box-shadow: 0px 0px 2px gray;
+ background-image: url(images/paven.png);
+
+ 
+}
+
+ul{
+  list-style: none;
+  text-decoration: none;
+  margin: 0px auto;
+  width: 1130px;  
+}
+
+.ejercitos{
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid black;
+    font-weight: bold;
+    transition: all 2s;
+}
+
+#menunav a{
+ display: block;
+color: black;
+ text-decoration: none;
+  padding-left: 45px;
+  padding-right: 30px;
+  font-style: italic;
+}
+
+
+#arlequines{
+    display: block;
+    border-left: 1px solid black;
+}
+
+.ejercitos :hover{
+    background-color: #aeecc3;
+    box-shadow: 0px 0px 4px green inset;
+    
+}
+
+/*fin de la barra de navegacion*/
+
+/*menu desplegable*/
+
+nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+    height: auto;
+  
+}
+
+nav > ul > li:hover> ul{
+   display: block; 
+  
+}
+
+nav > ul > li:hover> ul li {
+ 
+   background-color: white;
+   border-bottom: 1px solid #aeecc3;
+   padding: 11px;
+   line-height: 35px;
+   font-size: 13px;
+ }
+
+ .ejercitos1{
+    height: 85px;
+ }
+
+ /*fin del menu desplegable*/
+
+ /*inicio de la barra lateral*/
+
+ #content{
+    width: 80%;
+    min-height: 1100px;
+    margin: 0px auto;
+    float: left;
+    padding-left: 70px;
+    padding-top: 50px;
+    
+ }
+
+ #aside{
+    width: 200px;
+    height: 470px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 0px 5px 5px #aeecc3;
+    font-family: fuentepersonalizada;
+    background-image: url(images/paven.png);
+
+ }
+
+ #aside, #login, #enlaces{
+    display: block;
+    width: 200px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+   
+ }
+
+ #aside h3{
+    display: block;
+    color: black;
+    width: 90%;
+    text-align: center;
+    padding-top: 2px;
+    padding-left: px;
+    padding-bottom: 2px;
+    background: #aeecc3;
+    box-shadow: 0px 2px 2px gray;
+    border: 1 px solid gray;
+
+ }
+ form{
+    text-align: center;
+    padding-right: 15px;
+   
+ }
+ 
+
+ #boton{
+    margin: 15px;
+    width: 60px;
+    height: 30px;
+    background-color: #aeecc3;
+    border: 1px gray;
+    box-shadow: 0px 2px 1px gray;
+    font-weight: bold;
+ }
+
+ #interes :visited{
+    color: black;
+ }
+
+ /*fin de la barra lateral*/
+
+ /*secciones*/
+
+ #sections{
+   
+    
+    float: right;
+    width: 70%;
+    font-family: fuentepersonalizada;
+    margin-right: 20px;
+    margin-bottom: 130px;
+    margin-top: 10px;
+   
+ }
+
+ .titulo{
+    font-family: fuentepersonalizada;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 20px;
+    border: 1px solid gray;
+    box-shadow: 0px 5px 5px gray;
+    background-color: #aeecc3;
+ }
+
+ #sections section{
+  
+    background-image: url(images/paven.png);
+    padding: 20px;
+    border:  1px solid gray;
+    box-shadow: 0px 5px 5px #aeecc3;
+ }
+
+ #nuevas, #rumones{
+   margin-bottom: 50px;
+ }
+
+ #antiguas{
+   border-bottom: none;
+ }
+
+#sections article a {
+   color: #159741;
+   text-decoration: none;
+}
+span{
+   color: gray;
+}
+
+/*fin de las secciones*/
+
+/*footer*/
+footer{
+   color: white;
+   font-family: fuentepersonalizada;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 100px;
+   margin-left: 20%;
+   text-shadow: 0px 1px 1px gray;
+
+}
+.clearfix{
+   float: none;
+   clear: both;
+}
+/*fin del footer*/
+
+@media (max-width: 480px) and (min-width:600px) {
+   #aside {
+      color: red;
+   }
+}
+
+
+
+
+
